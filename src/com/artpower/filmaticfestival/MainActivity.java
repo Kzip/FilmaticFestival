@@ -1,7 +1,13 @@
 package com.artpower.filmaticfestival;
 
+
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.util.Log;
 import android.view.Menu;
 
 public class MainActivity extends Activity {
@@ -20,5 +26,14 @@ public class MainActivity extends Activity {
         
         return true;
     }
+    
+    public boolean isMultiPane() {
+        return getResources().getConfiguration().orientation
+                == Configuration.ORIENTATION_LANDSCAPE;
+    }
+    
+   
+    
+    
     
 }
