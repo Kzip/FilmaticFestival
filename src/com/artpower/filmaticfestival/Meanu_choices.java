@@ -2,9 +2,11 @@ package com.artpower.filmaticfestival;
 
 public class Meanu_choices {
 			static String[] Navigation = {
-				"ITINERARY",
-				"calender",
-				"whose who?"
+				"Tickets",
+				"Website",
+				"Whova",
+				"Calender"
+				
 			
 			};
 			

@@ -1,22 +1,23 @@
 package com.artpower.filmaticfestival;
 
-import android.app.Fragment;
+
+
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-public class FilmaticWebviewActivity extends Fragment {
-
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
-		return super.onCreateView(inflater, container, savedInstanceState);
+import android.webkit.WebView;
+ 
+public class FilmaticWebviewActivity extends Activity {
+ 
+	private WebView webView;
+ 
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.webview);
+ 
+		webView = (WebView) findViewById(R.id.webView1);
+		webView.getSettings().setJavaScriptEnabled(true);
+		webView.loadUrl("http://client.frankshanley.com/filmatic/");
+ 
 	}
-	
-	
-	
-	
-
+ 
 }
