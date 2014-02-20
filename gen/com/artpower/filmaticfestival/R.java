@@ -67,7 +67,6 @@ public final class R {
          */
         public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
     }
