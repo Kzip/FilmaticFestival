@@ -90,7 +90,7 @@ public class NavigationFragmentTitles extends ListFragment {
 
         // Populate list with our static array of titles.
         setListAdapter(new ArrayAdapter<String>(getActivity(),
-                R.layout.myrow,
+                R.layout.myrow,R.id.label,
                Meanu_choices.Navigation));
 
         ListView lv = getListView();

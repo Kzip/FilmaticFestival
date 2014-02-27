@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" 
-	android:background="#D3432B"
+	
 	>
     <TextView
         android:id="@+id/label"
@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="@+id/label"
         android:textSize="20dp" 
-        android:background="#FFFFFF"
+      
         >
        
     </TextView>
