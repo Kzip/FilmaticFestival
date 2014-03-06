@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class NavigationFragment extends Fragment {
 	
-	private int mIndex = 0;
+	private int mIndex;
 
 	public static NavigationFragment newInstance(int index) {
         Log.v(MainActivity.TAG, "in NavigationFragment newInstance(" + index + ")");
