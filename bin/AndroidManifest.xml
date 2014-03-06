@@ -8,10 +8,17 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="18" />
 
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:theme="@style/AppTheme"
         >
         <activity
             android:name="com.artpower.filmaticfestival.MainActivity"
@@ -27,6 +34,19 @@
             android:label="@string/title_activity_navigation" >
            
         </activity>
+         <activity
+            android:name="com.artpower.filmaticfestival.ItineraryActivity"
+            android:label="@string/app_name" />
+        <service
+        	android:name=".FilmaticCalendarService"
+        	android:exported="false" />
+        <receiver android:name="OnBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        
     </application>
 
 </manifest>
